@@ -1,5 +1,6 @@
-package com.example.udemyjdbctojpaproject.SpringJDBC;
+package com.example.udemyjdbctojpaproject.SpringJDBC.jdbc;
 
+import com.example.udemyjdbctojpaproject.SpringJDBC.entity.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;

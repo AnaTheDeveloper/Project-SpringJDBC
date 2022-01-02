@@ -1,8 +1,15 @@
-package com.example.udemyjdbctojpaproject.SpringJDBC;
+package com.example.udemyjdbctojpaproject.SpringJDBC.entity;
 
+import javax.persistence.*;
+
+@Entity
+@NamedQuery(name="find_all_persons", query="select p from Person p")
 public class Person {
 
+    @Id
+    @GeneratedValue
     private int id;
+
     private String name;
     private String location;
 
@@ -13,6 +20,12 @@ public class Person {
 
     public Person(int id, String name, String location) {
         this.id = id;
+        this.name = name;
+        this.location = location;
+    }
+
+    public Person(String name, String location) {
+        super();
         this.name = name;
         this.location = location;
     }
